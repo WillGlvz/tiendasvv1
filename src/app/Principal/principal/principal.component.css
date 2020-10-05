@@ -16,7 +16,7 @@
 	font-family: 'Pacifico'; 
 	font-style: cursive; 
 	font-weight: normal; 
-	src: url(/assets/ttf/Pacifico.ttf) format("truetype"); 
+	src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6H6Mk.woff2) format('woff2');  
 }
 
 .letra1{
