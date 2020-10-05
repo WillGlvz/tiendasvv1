@@ -1,0 +1,38 @@
+<div *ngIf="showadm">
+<div class="container">
+    <div class="row">
+      <div class="col s4 offset-s4 center">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Formulario primer Administrador</span>
+            <div class="input-field">
+              <input id="nombres" type="text" class="validate" style="color: white;" [(ngModel)]="adm.nombre_admin" >
+              <label for="nombres" style="color: white;">Nombres admin</label>
+            </div>
+            <div class="input-field">
+              <input id="usuario" type="text" class="validate" style="color: white;" [(ngModel)]="adm.usuario_admin">
+              <label for="usuario" style="color: white;">Usuario</label>
+            </div>
+            <div class="input-field">
+                <input id="dui" type="text" class="validate" style="color: white;" [(ngModel)]="adm.dui_admin">
+                <label for="dui" style="color: white;">DUI</label>
+            </div>
+            <div class="input-field">
+                <input id="contacto" type="text" class="validate" style="color: white;" [(ngModel)]="adm.contacto_admin">
+                <label for="contacto" style="color: white;">Contacto</label>
+            </div>
+            <div class="input-field">
+                <input id="contra" type="password" class="validate" style="color: white;" [(ngModel)]="adm.contra_admin">
+                <label for="contra" style="color: white;">Contraseña</label>
+              </div>
+          </div>
+          <div class="card-action">
+            <button class="btn waves-effect waves-light" (click)="agregaradmin()" *ngIf="adm.id_admin== 0">Agregar datos
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

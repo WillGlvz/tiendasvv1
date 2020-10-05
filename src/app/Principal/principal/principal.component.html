@@ -1,0 +1,32 @@
+<div *ngIf="showPri">
+<nav>
+  <div class="nav-wrapper">
+    <a class="brand-logo"><i class="material-icons right">local_grocery_store</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a>Inicio<i class="material-icons right">home</i></a></li>
+      <li><a (click)="IrAdmin()">Administradores<i class="material-icons right">person</i></a></li>
+      <li><a (click)="IrCliente2()">Clientes<i class="material-icons right">people</i></a></li>
+      <li><a (click)="IrProductos()">Productos<i class="material-icons right">local_offer</i></a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="row center">
+    <div class="col s12" style="margin-top: 60px;">
+      <h1 class="parrafo">Bienvenido a la Tienda de Don Diego</h1>
+    </div>
+  </div>
+  <div class="row center">
+    <div class="col s12">
+      <img width="300" src="../assets/img/tienda.png">
+    </div>
+  </div>
+  <div class="row center">
+    <div class="col s12">
+      <button class="btn waves-effect waves-light colorboton" (click)="IrCliente()">Registrar compra
+        <i class="material-icons right">add_shopping_cart</i>
+      </button>
+    </div>
+  </div>
+</div>
+</div>
